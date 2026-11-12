@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>File Resurge Privacy Policy</title>
-  <meta name="description" content="How the File Resurge Android app handles your information: on-device scanning and recovery, all-files access, Google AdMob ads and consent, Firebase Analytics and Crashlytics, and data deletion.">
+  <meta name="description" content="How the File Resurge Android app handles your information: on-device scanning and recovery, all-files access, Google AdMob ads, rewarded ads and consent, and data deletion.">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#3688F6">
   <link rel="canonical" href="https://nextsolutions774-dev.github.io/fileresurge/privacy-policy.html">
@@ -32,11 +32,11 @@
   <main class="policy">
     <div class="container narrow">
       <h1>File Resurge Privacy Policy</h1>
-      <p class="updated">File Resurge 1.1.0 and later · Effective date: 13 November 2026</p>
+      <p class="updated">File Resurge 1.1.0 (version code 104) and later · Effective date: 13 November 2026</p>
 
       <h2 id="summary">Summary</h2>
       <p>File Resurge (package name com.tavirox.nelqura.delrev) is an Android app that finds photos, videos, audio files and documents on your phone, including hidden copies and items in the system trash, saves copies of the files you choose, and helps you delete junk files. In this policy, "we" and "us" mean the developer of File Resurge.</p>
-      <p>Scanning, previewing, recovering and cleaning happen entirely on your phone. Your files, their names and their contents are never uploaded to us or to anyone else. File Resurge has no accounts and no servers of its own. The app shows ads from Google AdMob and uses Google's Firebase Analytics and Firebase Crashlytics; Google collects some data to provide those services, as described below.</p>
+      <p>Scanning, previewing, recovering and cleaning happen entirely on your phone. Your files, their names and their contents are never uploaded to us or to anyone else. File Resurge has no accounts and no servers of its own. The app does not include any analytics or crash-reporting service. It shows ads from Google AdMob, and Google collects some data to provide them, as described below.</p>
 
       <h2 id="on-device">Information processed on your device</h2>
       <p>To do its job, File Resurge reads the following on your phone only:</p>
@@ -46,7 +46,7 @@
         <li><strong>Installer (APK) files:</strong> the version name and number written inside APK files found in storage, shown in Clean Storage.</li>
         <li><strong>File contents for duplicate detection:</strong> photos of the same size are compared by a checksum calculated on your phone. The checksums are not stored or sent anywhere.</li>
       </ul>
-      <p>Scan results are kept only in memory while the app is open. File Resurge stores a few settings in its private storage: whether you have chosen a language, whether you have finished the introduction, and when the last full-screen ad was shown. These settings may be included in your phone's own Android backup.</p>
+      <p>Scan results are kept only in memory while the app is open. File Resurge stores a few settings in its private storage on your phone: whether you have chosen a language, whether you have finished the introduction, how many times the app has been started, when the last full-screen ad and the last rewarded-ad offer were shown, and the time until which your ad-free reward lasts. These settings are never sent to us; they may be included in your phone's own Android backup.</p>
 
       <h2 id="recovery">Recovering, sharing and deleting files</h2>
       <ul>
@@ -59,13 +59,30 @@
       <ul>
         <li><strong>All files access (MANAGE_EXTERNAL_STORAGE), Android 11 and later:</strong> needed to find hidden files and items in the system trash anywhere in shared storage, to save recovered copies and to delete the files you choose. The app explains this before opening the Android setting, and you can turn it off at any time in Android settings. Without it, scanning does not start.</li>
         <li><strong>Storage (READ_EXTERNAL_STORAGE, WRITE_EXTERNAL_STORAGE), Android 9 and 10 only:</strong> the same purpose on older Android versions.</li>
-        <li><strong>Internet and network state:</strong> for ads, consent, analytics and crash reports.</li>
-        <li><strong>Permissions added by Google's libraries:</strong> the advertising ID and Android ad-services permissions (for ads and ad measurement), the Play install referrer (used by Firebase Analytics to know where an install came from), and wake-lock and background-work permissions used by Google's libraries to send their data reliably.</li>
+        <li><strong>Internet and network state:</strong> for ads and ad consent.</li>
+        <li><strong>Permissions added by the Google Mobile Ads library:</strong> the advertising ID and Android ad-services permissions (for ads and ad measurement), and wake-lock and background-work permissions that the library uses to send ad requests and measurements reliably.</li>
       </ul>
       <p>File Resurge does not ask for your contacts, calendar, location, camera, microphone, phone, SMS or accounts, and it does not show notifications.</p>
 
       <h2 id="ads">Ads (Google AdMob)</h2>
-      <p>File Resurge is free and shows ads from Google AdMob: banners on some screens, one native ad on the Home screen marked "Ad", a full-screen ad at most once every 90 seconds after a recovery or a clean-up has finished, and an app-open ad when you start or return to the app (never on the very first launch). To serve and measure ads and to prevent fraud, Google may collect and process:</p>
+      <p>File Resurge is free and shows ads from Google AdMob:</p>
+      <ul>
+        <li>banners on some screens and one native ad on the Home screen marked "Ad";</li>
+        <li>a full-screen ad after a recovery or a clean-up has finished, at most once every 2 minutes;</li>
+        <li>an app-open ad when you start or return to the app.</li>
+      </ul>
+      <p>No full-screen ad is shown during your first session in the app, while a scan, recovery or clean-up is running, or over a permission screen.</p>
+
+      <h2 id="rewarded">Optional rewarded ads and the ad-free reward</h2>
+      <p>Two ad formats are entirely optional and only appear when you choose them:</p>
+      <ul>
+        <li><strong>Rewarded ad:</strong> in Settings, "No ads for 24 hours" lets you watch one video ad.</li>
+        <li><strong>Rewarded interstitial:</strong> before a "Scan deleted" (deep) scan you may be offered one ad. A screen explains the reward and counts down 5 seconds before the ad starts, and you can tap <strong>No thanks</strong> at any time. Skipping does not change the scan in any way.</li>
+      </ul>
+      <p>If you watch either ad to the end, File Resurge hides banner, native, full-screen and app-open ads for 24 hours. The end time of this reward is stored only on your phone (in the app's private settings); it is not linked to an account and is not sent to us. Your files, scans and recoveries are never locked behind an ad.</p>
+
+      <h2 id="ad-data">Data collected by Google for ads</h2>
+      <p>To serve and measure ads, including rewarded ads, and to prevent fraud, Google may collect and process:</p>
       <ul>
         <li>Your device's advertising ID, a resettable identifier used for advertising.</li>
         <li>Device and app information, such as device model, Android version, language and app version.</li>
@@ -79,36 +96,34 @@
       <p>To change your choice, open File Resurge, go to <strong>Settings</strong> and tap <strong>Privacy Options</strong>. This option appears when it applies in your region.</p>
       <p>You can also manage how Google personalizes ads in <a href="https://myadcenter.google.com/">My Ad Center</a>, and reset or delete your advertising ID in your phone's settings (usually Settings &gt; Privacy &gt; Ads, or Settings &gt; Google &gt; Ads).</p>
 
-      <h2 id="firebase">App statistics and crash reports (Firebase)</h2>
-      <p>File Resurge uses <strong>Google Firebase Analytics</strong> to understand, in aggregate, how the app is used (for example app opens, screens viewed, app version, device model, Android version, country and the install source), and <strong>Firebase Crashlytics</strong> to receive reports when the app crashes (the stack trace, device model, Android version and app version). Firebase uses an app-instance identifier and may use the advertising ID where available. This data does not include your files, file names or file contents. It is processed by Google under the <a href="https://firebase.google.com/support/privacy">Firebase privacy and security terms</a>.</p>
-
       <h2 id="not-do">What we don't do</h2>
       <ul>
         <li>We do not upload, view or keep your photos, videos, audio, documents or their names.</li>
         <li>We do not sell personal information.</li>
         <li>We do not use your files for advertising.</li>
+        <li>File Resurge does not use analytics or crash-reporting services.</li>
         <li>File Resurge does not run in the background, show notifications or display ads outside the app.</li>
       </ul>
 
       <h2 id="security">Security</h2>
-      <p>Data sent by Google's libraries (ads, consent, analytics and crash reports) is transferred over encrypted connections (HTTPS).</p>
+      <p>Data sent by Google's ads and consent libraries is transferred over encrypted connections (HTTPS).</p>
 
       <h2 id="retention">Data retention and deletion</h2>
       <ul>
-        <li>Scan results are removed when you close the app. Uninstalling File Resurge deletes its settings from your phone.</li>
+        <li>Scan results are removed when you close the app. Uninstalling File Resurge, or clearing its storage in Android settings, deletes its settings, including the ad-free reward time, from your phone.</li>
         <li>Recovered copies are ordinary files you own. You can delete them in File Resurge (Restore Data) or with any file manager; uninstalling the app does not remove them.</li>
         <li>You can reset or delete your advertising ID at any time in your phone's settings, and change your ad consent in Settings &gt; Privacy Options.</li>
-        <li>Analytics and crash data held by Google are kept for the retention period set in Firebase and are then deleted automatically. Because this data is not linked to your name or account, we cannot look up an individual person in it. To ask for deletion of any data associated with your use of the app, use the developer contact option on the app's Google Play page.</li>
+        <li>We do not hold any data about you on our own servers. Ad data is handled by Google as described in the Google Privacy Policy; you can manage it in My Ad Center. For any question or deletion request, write to the contact address below.</li>
       </ul>
 
       <h2 id="children">Children</h2>
-      <p>File Resurge is not directed to children under 13 and is not designed for them. We do not knowingly collect personal information from children. If you believe a child has used the app and data was collected, use the developer contact option on the app's Google Play page and we will help remove it where we can.</p>
+      <p>File Resurge is not directed to children under 13 and is not designed for them. We do not knowingly collect personal information from children. If you believe a child has used the app and data was collected, contact us at the address below and we will help remove it where we can.</p>
 
       <h2 id="changes">Changes to this policy</h2>
       <p>If the app changes in a way that affects this policy, we will update this page and its effective date before the new version is released.</p>
 
       <h2 id="contact">Contact</h2>
-      <p>Questions about this policy can be sent through the developer contact option on the <a href="https://play.google.com/store/apps/details?id=com.tavirox.nelqura.delrev">File Resurge Google Play page</a>.</p>
+      <p>Contact: <a href="mailto:mazaappstudio@gmail.com">mazaappstudio@gmail.com</a></p>
 
       <p><a href="/fileresurge/">Back to File Resurge</a> · <a href="/fileresurge/terms.html">Terms of use</a></p>
     </div>
